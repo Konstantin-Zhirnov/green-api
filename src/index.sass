@@ -1,0 +1,30 @@
+@import "./shared/constants/vars"
+
+body
+    margin: 0
+    box-sizing: border-box
+    font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,Courier,monospace
+    webkit-user-select: none
+    moz-user-select: none
+    ms-user-select: none
+    user-select: none
+    text-rendering: optimizeLegibility
+    font-feature-settings: "kern"
+
+    #root
+        position: relative
+        color: $primary
+        background-color: $app-background
+        background-image: linear-gradient(180deg,$app-background, $app-background-deeper)
+        min-height: 100vh
+        min-width: 100vw
+        @media screen and (min-width: 1441px)
+            &:after
+                position: fixed
+                top: 0
+                left: 0
+                width: 100%
+                height: 127px
+                content: ""
+                background-color: $app-background-stripe
+
